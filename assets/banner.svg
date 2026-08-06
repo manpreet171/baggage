@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f2e8"/>
+      <stop offset="1" stop-color="#ece3d4"/>
+    </linearGradient>
+    <linearGradient id="hide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97706"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="strap" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c2410c"/>
+      <stop offset="1" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="7" dy="9" stdDeviation="0" flood-color="#1a1512" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#paper)"/>
+
+  <g stroke="#1a1512" stroke-opacity="0.045">
+    <path d="M0 90H1280M0 210H1280M0 330H1280M0 450H1280M0 570H1280" stroke-width="1"/>
+    <path d="M170 0V640M420 0V640M670 0V640M920 0V640M1170 0V640" stroke-width="1"/>
+  </g>
+
+  <g>
+    <text x="86" y="168" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="-3" fill="#1a1512">baggage</text>
+    <path d="M90 200 H520" stroke="#c2410c" stroke-width="5"/>
+    <text x="88" y="246" font-family="ui-monospace, Consolas, monospace" font-size="25" fill="#4a4038">what your session is still carrying</text>
+  </g>
+
+  <!-- The string, tying the bag to its own itemised bill. -->
+  <path d="M392 300 C 470 268, 590 280, 664 330" fill="none" stroke="#1a1512" stroke-width="3" stroke-opacity="0.55"/>
+
+  <!-- The bag. Packed past the point of sense, straps holding on. -->
+  <g filter="url(#lift)">
+    <!-- things that did not fit, poking out of the seam -->
+    <g stroke="#1a1512" stroke-width="2.5" stroke-linejoin="round">
+      <g transform="rotate(-13 250 330)">
+        <rect x="212" y="300" width="74" height="58" rx="3" fill="#fffdf8"/>
+        <path d="M222 318H276M222 332H268M222 346H258" stroke="#a8998a" stroke-width="3"/>
+      </g>
+      <g transform="rotate(9 350 322)">
+        <rect x="316" y="292" width="70" height="54" rx="3" fill="#fffdf8"/>
+        <path d="M326 310H376M326 324H366" stroke="#a8998a" stroke-width="3"/>
+      </g>
+      <g transform="rotate(21 452 330)">
+        <rect x="420" y="302" width="66" height="50" rx="3" fill="#fffdf8"/>
+        <path d="M430 320H474M430 334H462" stroke="#a8998a" stroke-width="3"/>
+      </g>
+      <!-- a cable nobody remembers packing -->
+      <path d="M498 330 C 536 316, 528 372, 560 358" fill="none" stroke="#57534e" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- handle -->
+    <path d="M296 300 C 300 236, 400 236, 404 300" fill="none" stroke="#1a1512" stroke-width="13" stroke-linecap="round"/>
+    <path d="M296 300 C 300 244, 400 244, 404 300" fill="none" stroke="#78350f" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- body, bulging on every side -->
+    <path d="M168 330 Q 128 348 130 424 Q 128 500 172 522 Q 356 548 552 522 Q 596 500 594 424 Q 596 348 556 330 Q 360 306 168 330 Z"
+          fill="url(#hide)" stroke="#1a1512" stroke-width="4"/>
+
+    <!-- lid seam, sprung open a little -->
+    <path d="M140 400 Q 360 424 586 400" fill="none" stroke="#1a1512" stroke-width="3.5" stroke-opacity="0.75"/>
+
+    <!-- straps, doing everything they can -->
+    <g fill="url(#strap)" stroke="#1a1512" stroke-width="3">
+      <path d="M216 320 Q 206 424 222 528 L 258 524 Q 244 424 254 322 Z"/>
+      <path d="M456 322 Q 466 424 452 526 L 488 530 Q 502 424 494 320 Z"/>
+    </g>
+    <g fill="#1a1512">
+      <rect x="214" y="392" width="48" height="26" rx="4"/>
+      <rect x="452" y="392" width="48" height="26" rx="4"/>
+    </g>
+
+    <!-- strain marks -->
+    <g stroke="#1a1512" stroke-width="3" stroke-opacity="0.4" stroke-linecap="round">
+      <path d="M612 372 h26M616 400 h26M612 428 h26"/>
+      <path d="M112 372 h-26M108 400 h-26M112 428 h-26"/>
+    </g>
+  </g>
+
+  <!-- The claim tag: what the bag is costing you to carry. -->
+  <g filter="url(#lift)">
+    <path d="M716 108 h420 a16 16 0 0 1 16 16 v386 a16 16 0 0 1 -16 16 h-420 a16 16 0 0 1 -12-5 l-44-44 a16 16 0 0 1 -4-11 v-298 a16 16 0 0 1 4-11 l44-44 a16 16 0 0 1 12-5 z"
+          fill="#fffdf8" stroke="#1a1512" stroke-width="3.5"/>
+    <circle cx="690" cy="330" r="13" fill="url(#paper)" stroke="#1a1512" stroke-width="3.5"/>
+
+    <text x="740" y="160" font-family="ui-monospace, Consolas, monospace" font-size="18" letter-spacing="4" fill="#a8998a">CARRIED THIS SESSION</text>
+    <path d="M740 176 H1120" stroke="#1a1512" stroke-width="2" stroke-opacity="0.25"/>
+
+    <g font-family="ui-monospace, Consolas, monospace" font-size="20">
+      <text x="740" y="216" fill="#4a4038">build log</text>
+      <text x="1120" y="216" text-anchor="end" fill="#7c6f63">×214 turns</text>
+      <text x="740" y="256" fill="#4a4038">README.md</text>
+      <text x="1120" y="256" text-anchor="end" fill="#7c6f63">×198 turns</text>
+      <text x="740" y="296" fill="#4a4038">a file you read once</text>
+      <text x="1120" y="296" text-anchor="end" fill="#7c6f63">×186 turns</text>
+      <text x="740" y="336" fill="#4a4038">tools never called</text>
+      <text x="1120" y="336" text-anchor="end" fill="#7c6f63">×every turn</text>
+    </g>
+
+    <path d="M740 364 H1120" stroke="#1a1512" stroke-width="2" stroke-opacity="0.25" stroke-dasharray="7 7"/>
+
+    <text x="740" y="408" font-family="ui-monospace, Consolas, monospace" font-size="19" letter-spacing="3" fill="#a8998a">YOU WROTE</text>
+    <text x="1120" y="408" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="26" font-weight="700" fill="#1a1512">0.2%</text>
+
+    <text x="740" y="458" font-family="ui-monospace, Consolas, monospace" font-size="19" letter-spacing="3" fill="#a8998a">YOU RE-SENT</text>
+    <text x="1120" y="460" text-anchor="end" font-family="ui-monospace, Consolas, monospace" font-size="44" font-weight="700" fill="#c2410c">96.9%</text>
+
+    <rect x="740" y="484" width="380" height="12" rx="6" fill="#e7dccd"/>
+    <rect x="740" y="484" width="368" height="12" rx="6" fill="url(#strap)"/>
+  </g>
+
+  <text x="88" y="588" font-family="ui-monospace, Consolas, monospace" font-size="19" fill="#8a7f74">every token you pick up pays rent on every turn that follows</text>
+  <text x="88" y="616" font-family="ui-monospace, Consolas, monospace" font-size="16" letter-spacing="2" fill="#a8998a">SINGHLABS.DEV</text>
+</svg>

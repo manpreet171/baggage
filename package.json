@@ -1,0 +1,19 @@
+{
+  "name": "baggage-cli",
+  "version": "1.0.0",
+  "description": "What your session is still carrying. Prices everything in your Claude Code context by the turns it survived.",
+  "bin": { "baggage": "bin/baggage.mjs" },
+  "type": "module",
+  "scripts": { "test": "node test/baggage.test.mjs" },
+  "keywords": ["claude-code", "tokens", "context", "cost", "ai-agents", "cli"],
+  "author": {
+    "name": "Manpreet Singh",
+    "email": "singh.manpreet171900@gmail.com",
+    "url": "https://github.com/manpreet171"
+  },
+  "license": "MIT",
+  "homepage": "https://singhlabs.dev/baggage/",
+  "repository": { "type": "git", "url": "https://github.com/manpreet171/baggage.git" },
+  "engines": { "node": ">=18" },
+  "files": ["bin", "README.md", "LICENSE"]
+}
