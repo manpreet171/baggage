@@ -28,3 +28,11 @@ Claude Code names a project folder after its working directory with **every**
 non-alphanumeric character replaced by a dash, one each, never collapsed —
 `D:\My work` becomes `D--My-work`. Collapsing runs silently finds no transcripts
 and reports a confident nothing, which is why the test asserts on that failure.
+
+## Commits
+
+One short human line. **Never a `Co-Authored-By: Claude` trailer and no AI
+attribution of any kind** — GitHub renders it as a second Contributor on the
+repo front page, beside the author. Commit as `manpreet171
+<singh.manpreet171900@gmail.com>`. Saying "Claude Code" in a body as a technical
+term is fine; the attribution trailer is not.
