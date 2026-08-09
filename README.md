@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="baggage — what your session is still carrying" width="100%">
+<img src="assets/mark.png" alt="A character sitting on a suitcase packed far past its limit, still not closing" width="300">
 
 # baggage
 
